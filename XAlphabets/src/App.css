@@ -53,7 +53,8 @@ body {
   word-break: break-all;
 }
 
-.placeholder {
+.output:empty::before {
+  content: attr(data-placeholder);
   color: #9ca3af;
 }
 

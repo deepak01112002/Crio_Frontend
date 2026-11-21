@@ -32,12 +32,15 @@ function App() {
         <h1 className="title">Alphabet Buttons</h1>
         <p className="subtitle">Click letters (or use your keyboard) to build text.</p>
 
-        <div className="output">
-          {text || <span className="placeholder">Your text will appear here...</span>}
+        <div
+          className="output"
+          data-placeholder="Your text will appear here..."
+        >
+          {text}
         </div>
 
         <div className="backspace-row">
-          <button className="key backspace-btn" onClick={handleBackspace}>Backspace</button>
+          <button className="backspace-btn" onClick={handleBackspace}>Backspace</button>
         </div>
 
         <div className="keys-grid">
