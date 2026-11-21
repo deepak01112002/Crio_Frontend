@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d9736e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 36px 28px;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.score-x {
+  color: #ef4444;
+}
+
+.score-draws {
+  color: #374151;
+}
+
+.score-o {
+  color: #3b82f6;
+}
+
+.status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.cell {
+  aspect-ratio: 1;
+  background: #fff;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #374151;
+  transition: background-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover {
+  background-color: #f9fafb;
+}
+
+.cell-x {
+  color: #374151;
+}
+
+.cell-o {
+  color: #374151;
+}
+
+.win-cell {
+  border: 2px solid #22c55e;
+}
+
+.win-text {
+  color: #22c55e;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: none;
+  color: #374151;
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 9px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
