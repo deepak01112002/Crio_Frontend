@@ -36,7 +36,7 @@ function App() {
           onClick={fetchJoke}
           disabled={loading}
         >
-          {loading ? 'Fetching…' : 'Fetch joke'}
+          {loading ? 'Fetching...' : 'Fetch joke'}
         </button>
 
         {joke && (
