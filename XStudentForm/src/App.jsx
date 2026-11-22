@@ -59,7 +59,7 @@ export default function App() {
   return (
     <div className="page">
       <div className="card">
-        <h1 className="title">Student<br />Registration Form</h1>
+        <h1 className="title">Student Registration Form</h1>
 
         <form className="form" onSubmit={handleSubmit} noValidate>
           <div className="field">
